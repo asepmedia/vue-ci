@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/scss/src/scss/app.scss"],"names":[],"mappings":"AAAA,KACE","file":"assets/css/app.css","sourcesContent":[".app {\n  color: red;\n}\n\n\n// WEBPACK FOOTER //\n// ./src/scss/src/scss/app.scss"],"sourceRoot":""}

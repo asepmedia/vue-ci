@@ -1,0 +1,796 @@
+/**
+ * Puzzle
+ */
+.db-table {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.db-cell {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.db-middle {
+	vertical-align: middle !important;
+}
+
+.position-static {
+	position: static !important;
+	opacity: 1 !important;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+
+/**
+ * Search
+ */
+.search-going {
+	color: #ffffff;
+	padding: 10px 0;
+}
+
+.search-going .search-place {
+	font-size: 20px;
+	padding-bottom: 10px;
+	line-height: 1.2;
+}
+
+.search-going .search-time {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+
+/**
+ * Results stuck
+ */
+.result-fly {
+	background-color: transparent;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	padding: 15px 0;
+	height: auto;
+}
+
+.result-fly .db-2,
+.search-result .db-2,
+.search-result-one .db-2 {
+	float: none;
+	width: 100%;
+	margin: 0;
+}
+
+.result-fly .price-total {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	color: #dc2039;
+}
+
+.result-fly .price-total .pax {
+	font-size: 13px;
+	font-weight: normal;
+	position: relative;
+	top: -4px;
+}
+
+.result-fly .result-price {
+	padding-left: 15px;
+	border-left: 1px solid #e5e5e5;
+	width: 190px;
+}
+
+.result-fly .result-item {
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.result-fly .result-item:last-of-type {
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.result-fly .result-item,
+.result-fly .result-item a {
+	font-size: 13px;
+}
+
+.result-fly .result-item .logo,
+.result-fly .result-item .transit,
+.result-fly .result-item .time {
+	width: 80px;
+}
+
+.result-fly .result-item .place {
+	width: 265px;
+}
+
+.result-fly .result-item .bag {
+	width: 120px;
+}
+
+.result-fly .result-item .logo img {
+	width: 80%;
+}
+
+.result-fly img,
+.search-result img,
+.search-result-one img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	width: 100%;
+}
+
+.result-fly .place-plane,
+.result-fly .time-label,
+.result-fly .bag {
+	font-size: 11px;
+	color: #898989;
+}
+
+.result-fly .time-clock {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.result-fly .bag .fa {
+	display: inline-block;
+	width: 17px;
+	font-size: 13px;
+	color: #444;
+}
+
+
+/**
+ * Search result
+ */
+.search-result {
+	padding-bottom: 30px;
+	margin-top: 15px;
+}
+
+.search-result .container .row {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.search-result .table {
+	margin: 0;
+}
+
+.search-result thead tr th,
+.search-result thead tr th.search-time,
+.search-result tbody tr td {
+	font-size: 12px !important;
+}
+
+.search-result .search-logo {
+	width: 100px;
+	position: relative;
+	padding-left: 25px;
+}
+
+.search-result .search-logo img {
+	width: 100%;
+}
+
+.search-result .search-logo input,
+.search-result-one .search-logo input {
+	position: absolute !important;
+	left: 0;
+	top: 0;
+	opacity: 1;
+}
+
+.search-result .search-time {
+	font-weight: 700;
+	font-size: 14px !important;
+	text-align: center;
+	width: 60px;
+}
+
+.search-result .search-time span {
+	font-size: 10px;
+	display: block;
+	margin-top: -3px;
+}
+
+.search-result .search-transit,
+.search-result .search-bag {
+	width: 75px;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.search-result .search-price {
+	text-align: center;
+}
+
+.search-result .search-price-total {
+	color: #dc2039;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.search-result .search-title {
+	font-size: 11px;
+	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 10px;
+	padding-bottom: 3px;
+}
+
+.search-result .search-title .search-time {
+	font-weight: normal;
+	font-size: 11px;
+	line-height: normal;
+	vertical-align: middle;
+}
+
+.search-result .search-title .search-transit,
+.search-result .search-title .search-bag {
+	line-height: normal !important;
+}
+
+.search-result .search-title .db-table {
+	height: 25px;
+}
+
+.search-result .search-title .db-cell {
+	vertical-align: middle;
+}
+
+.search-result .search-result-filter,
+.search-result-one .search-result-filter {
+	margin-bottom: 10px;
+}
+
+.search-result-one .search-result-filter {
+	margin-top: 15px;
+}
+
+.search-result .search-result-filter .inline-block,
+.search-result-one .search-result-filter .inline-block {
+	margin-right: 15px;
+}
+
+.search-result .search-result-filter input,
+.search-result-one .search-result-filter input {
+	position: static;
+	opacity: 1;
+}
+
+.search-result .search-result-filter .dropdown-menu,
+.search-result-one .search-result-filter .dropdown-menu {
+	padding: 15px 0;
+}
+
+.search-result .search-result-filter .checkbox,
+.search-result-one .search-result-filter .checkbox {
+	padding: 0 15px;
+	margin: 0;
+}
+
+.search-result .search-result-filter .checkbox span,
+.search-result-one .search-result-filter .checkbox span {
+	position: relative;
+	top: -3px;
+	font-size: 12px;
+}
+
+
+/**
+ * Search result one
+ */
+.search-result-one td {
+	font-size: 13px;
+}
+
+.search-result-one .search-logo {
+	width: 175px;
+	text-align: center;
+}
+
+.search-result-one .search-logo img {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+}
+
+.search-result-one .search-time,
+.search-result-one .search-transit {
+	width: 135px;
+	text-align: center;
+}
+
+.search-result-one .search-bag {
+	width: 150px;
+	text-align: center;
+}
+
+.search-result-one .search-bag .fac-item {
+	text-align: left;
+}
+
+.search-result-one .search-bag .fa {
+	display: inline-block;
+	width: 20px;
+}
+
+.search-result-one .search-price {
+	text-align: center;
+}
+
+.search-result-one .plane-name {
+	margin-top: 5px;
+}
+
+.search-result-one .flight-name {
+	padding-bottom: 15px;
+}
+
+.search-result-one .search-time span {
+	display: inline-block;
+}
+
+.search-result-one .search-time .time-value {
+	font-size: 18px;
+}
+
+.search-result-one .search-time .time-landed {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.search-result-one .small {
+	font-size: 11px;
+}
+
+.search-result-one .search-price-value {
+	text-align: right;
+}
+
+.search-result-one .search-price-value del {
+	color: #222;
+	text-decoration: line-through;
+	border-color: #222;
+}
+
+.search-result-one .search-price-total {
+	color: #ff720a;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1;
+}
+
+.search-result-one .search-price-action {
+	padding-left: 15px;
+	width: 170px;
+}
+
+.search-result-one .flight-choice {
+	position: relative;
+	width: 22px;
+	text-align: left;
+}
+
+
+/**
+ * Filter
+ */
+#table-sort th::after {
+    font-family: 'FontAwesome';
+    content: "\f0dc";
+    display: inline-block;
+	position: relative;
+	left: 3px;
+    right: 0;
+	color: #777;
+    font-size: 12px;
+    line-height: 1;
+}
+
+#table-sort th.sorting-asc::after {
+	content: "\f0d8";
+}
+
+#table-sort th.sorting-desc::after {
+	content: "\f0d7";
+}
+
+
+/**
+ * Main search
+ */
+.main-search {
+	background-color: #ffffff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.main-search input {
+	background-color: #ffffff !important;
+}
+
+.main-search .db-cell {
+	position: relative;
+	padding: 7.5px;
+	border-left: 1px solid #e5e5e5;
+}
+
+.main-search .db-table .db-cell:first-of-type {
+	border-left: 0;
+}
+
+.main-search label {
+	display: block;
+	text-align: left;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.main-search .search-from,
+.main-search .search-to {
+	width: 184px;
+}
+
+.main-search .search-button {
+	width: 96px;
+}
+
+.main-search .search-button button {
+	height: 48px;
+}
+
+.main-search .form-control {
+	border-radius: 0 !important;
+	-webkit-border-radius: 0!important;
+	border: 0 !important;
+	height: 26px !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	line-height: 26px;
+}
+
+.main-search .with-icon {
+	padding-left: 22px !important;
+}
+
+.main-search .fa-label {
+	position: absolute;
+	left: 7.5px;
+	bottom: 13px;
+	font-size: 17px;
+	color: #777;
+}
+
+.main-search .search-ghost-label {
+	position: absolute;
+	bottom: 8px;
+	right: 26px;
+	font-size: 13px;
+	color: #777;
+}
+
+.main-search #search-flight .search-passenger {
+	width: 105px;
+}
+
+.main-search #search-hotel .search-from {
+	width: 300px;
+}
+
+.main-search #search-hotel .search-go,
+.main-search #search-hotel .search-back {
+	width: 130px;
+}
+
+.main-search #search-trip .search-from {
+	width: auto;
+}
+
+.main-search .nav-tabs > li > a {
+	border-top: 0 !important;
+	color: #777;
+}
+
+.main-search .nav-tabs > li:first-child > a {
+	border-top-left-radius: 5px !important;
+	-webkit-border-top-left-radius: 5px !important;
+	border-left: 0 !important;
+}
+
+.main-search .nav-tabs > li.active > a,
+.main-search .nav-tabs > li.active > a:hover,
+.main-search .nav-tabs > li.active > a:focus {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	color: #0054ba;
+}
+
+.main-search .active {
+	background-color: #ffffff !important;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.main-search .search-passenger #search-passenger {
+	padding-left: 25px !important;
+}
+
+.main-search .search-passenger .dropdown-menu {
+	padding: 15px;
+	padding-bottom: 0;
+}
+
+.main-search .search-passenger .dropdown-menu input {
+	border: 1px solid #e0e0e0 !important;
+	padding-left: 12px !important;
+}
+
+.main-search .search-passenger .dropdown-menu label {
+	margin-bottom: 2px;
+	font-size: 12px;
+}
+
+.main-search .search-passenger .dropdown-menu .help-block {
+	font-size: 10px;
+	margin-top: 0;
+	color: #888;
+}
+
+
+/**
+ * Responsive
+ */
+@media screen and (max-width:767px) {
+	/**
+	 * Return flight
+	 */
+
+	
+	/**
+	 * All flight
+	 */
+	.search-top {
+		padding-top: 60px !important;
+	}
+	
+	.search-going .search-place {
+		font-size: 15px;
+	}
+	
+	.search-going .search-time {
+		font-size: 13px;
+		line-height: 17px;
+	}
+	
+	.search-result-global .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.search-result-global .db-2 {
+		border: 0;
+		border-radius: 0;
+		-webkit-border-radius: 0;
+	}
+	
+	.search-result-global .db-2-main-com {
+		padding: 15px;
+		padding-top: 0;
+	}
+	
+	.search-result-global thead,
+	.search-result-global .search-bag,
+	.search-result-global .flight-name,
+	.search-result-global .search-price-action,
+	.search-result-global .search-logo > div > div:last-of-type,
+	.search-result-global .search-price-value del,
+	.search-result-global .db-2-com h4,
+	.search-result-global .flight-choice {
+		display: none;
+	}
+	
+	.search-result-global table,
+	.search-result-global tbody,
+	.search-result-global tr,
+	.search-result-global td {
+		display: block;
+		border: 0 !important;
+		padding: 0 !important;
+	}
+	
+	.search-result-global tr {
+		position: relative;
+		border-bottom: 1px solid #ddd !important;
+	}
+	
+	.search-result-global .search-logo,
+	.search-result-global .search-time,
+	.search-result-global .search-transit {
+		width: 100%;
+		text-align: left;
+	}
+	
+	.search-result-global .search-logo {
+		margin-top: 10px;
+		margin-bottom: 3px;
+	}
+	
+	.search-result-global .search-logo img {
+		display: inline-block;
+		width: 50px;
+		height: auto;
+	}
+	
+	.search-result-global .plane-name,
+	.search-result-global .search-time .time-value,
+	.search-result-global .search-time > div {
+		display: inline-block;
+	}
+	
+	.search-result-global .small,
+	.search-result-global .search-time .time-landed {
+		font-size: 9px;
+	}
+	
+	.search-result-global .search-time .time-value {
+		font-size: 13px;
+		line-height: 1;
+		margin-right: 3px;
+	}
+	
+	.search-result-global .search-price {
+		text-align: right;
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		top: 4px;
+	}
+	
+	.search-result-global .search-price-total {
+		font-size: 14px;
+		padding-bottom: 5px;
+	}
+	
+	.search-result-global .search-transit {
+		font-size: 11px;
+		margin-bottom: 5px !important;
+	}
+	
+	.search-result-global .search-result-filter {
+		margin-top: 10px;
+		margin-bottom: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 11px;
+	}
+	
+	.search-result-global .search-result-filter .dropdown > a {
+		font-size: 11px;
+	}
+	
+	.search-result .search-result-filter .inline-block,
+	.search-result-global .search-result-filter .inline-block {
+		margin-right: 10px;
+	}
+	
+	.search-result .table {
+		height: 350px;
+		overflow-y: auto;
+	}
+	
+	
+	/**
+	 * Single flight
+	 */
+	.search-result .container .row {
+		margin: 0;
+	}
+	
+	.search-result > div > div > div,
+	.search-result .db-2-main-com {
+		padding: 0 !important;
+	}
+	
+	.search-result > div > div > div:first-of-type .db-2-com {
+		padding-left: 15px !important;
+		padding-right: 7.5px;
+		border-right: 1px solid #ddd;
+	}
+	
+	.search-result > div > div > div:last-of-type .db-2-com {
+		padding-right: 15px !important;
+		padding-left: 7.5px;
+	}
+	
+	.search-result .search-logo input {
+		display: none;
+	}
+	
+	.search-result .search-price {
+		position: static;
+		padding: 0;
+	}
+	
+	.search-result .search-time .time-landed {
+		font-weight: normal;
+		display: inline-block;
+	}
+	
+	.search-result .search-transit {
+		margin-bottom: 0 !important;
+	}
+	
+	.search-result .db-label {
+		text-align: center;
+		text-transform: uppercase;
+		border-bottom: 1px solid #ddd;
+		border-top: 1px solid #ddd;
+		padding: 7.5px 0;
+	}
+	
+	
+	/**
+	 * Main search
+	 */
+	.main-search-wrap {
+		width: 100%;
+	}
+	
+	.main-search label {
+		font-size: 12px;
+	}
+
+	.main-search .db-table,
+	.main-search .db-cell {
+		display: block;
+	}
+	
+	.main-search .search-from,
+	.main-search .search-to,
+	.main-search .search-go,
+	.main-search .search-back,
+	.main-search .search-passenger,
+	.main-search .search-button {
+		width: 49% !important;
+		display: inline-block;
+	}
+	
+	.main-search #search-hotel .search-button {
+		width: 100% !important;
+		display: block !important;
+	}
+	
+	/*---------- tour ------------*/
+	.row.pilihantour {
+		margin-left: 1.4rem;
+		margin-right: 2.4rem;
+		margin-bottom:0px;
+	}
+	.row.luarpilihantour {
+		margin-bottom:0px;
+	}
+	.dropdown-content li > a, .dropdown-content li > span {
+		font-size: 13px;
+		color: #26a69a;
+		display: block;
+		line-height: 22px;
+		padding: 14px 16px;
+	}
+	.card .card-action {
+		border-top: 1px solid rgba(160,160,160,0.2);
+		padding: 20px;
+		text-align: right;
+	}
+}
